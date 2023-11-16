@@ -12,7 +12,7 @@
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   
   <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
-  <a-scene embedded arjs="trackingMethod:best; debugUIEnabled:true;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs="trackingMethod:best; debugUIEnabled:false;">
 
     <!-- OBJ形式のCGモデルの読み込み -->
     <a-assets>
@@ -39,19 +39,8 @@
     </a-marker>
 
     <!-- AR用のカメラを置く -->
-    <a-entity camera rotation="0 180 0"></a-entity>
+    <a-entity camera></a-entity>
 
   </a-scene>
 </body>
-<script>
-  AFRAME.registerComponent('marker', {
-  init: function () {
-    const marker = this.el;
-
-    marker.addEventListener('markerFound', function () {
-      console.log('!');
-    });
-  }
-});
-</script>
 </html>
