@@ -44,6 +44,14 @@
   </a-scene>
 </body>
 <script>
-  arProfile.defaultMarkerParameters.markersAreaEnabled = true
+  AFRAME.registerComponent('marker', {
+  init: function () {
+    const marker = this.el;
+
+    marker.addEventListener('markerFound', function () {
+      console.log('!');
+    });
+  }
+});
 </script>
 </html>
