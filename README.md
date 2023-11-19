@@ -2,7 +2,7 @@
 
 ## URL
 
-https://ar-beryl-one.vercel.app
+https://ar-beryl-one.vercel.app 
 
 (ルートディレクトリに変更しました。)
 
