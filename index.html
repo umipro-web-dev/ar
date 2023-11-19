@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CG モデルを登場させる</title>
+<script src="./js/main.js"></script>
 </head>
 <body style="margin:0px; overflow:hidden;">
   <!-- A-Frame ライブラリの読み込み -->
@@ -16,8 +17,8 @@
 
     <!-- OBJ形式のCGモデルの読み込み -->
     <a-assets>
-      <a-asset-item id="obj" src="/1701aida/tinker.obj"></a-asset-item>   <!-- objファイル -->
-      <a-asset-item id="mtl" src="/1701aida/obj.mtl"></a-asset-item>   <!-- mtlファイル -->
+      <a-asset-item id="obj" src=""></a-asset-item>   <!-- objファイル -->
+      <a-asset-item id="mtl" src=""></a-asset-item>   <!-- mtlファイル -->
     </a-assets>
 
     <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
@@ -27,12 +28,11 @@
         src="#obj"
         mtl="#mtl"
         scale="0.01 0.01 0.01"
-        position="0 0 0"
-        rotation="-90 0 0">
+        position="0 0 0">
         <a-animation
           attribute="rotation"
           to="0 0 0"
-          dur="0"
+          dur="3000"
           easing="linear"
           repeat="indefinite">
         </a-animation>
