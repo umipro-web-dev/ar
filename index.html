@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CG モデルを登場させる</title>
-<script src="./js/main.js"></script>
+
 </head>
 
 <body style="margin:0px; overflow:hidden;">
@@ -30,7 +30,9 @@
         src="#obj"
         mtl="#mtl"
         scale="0.01 0.01 0.01"
-        position="0 0 0">
+        position="0 0 0"
+        id="model"
+        >
         <a-animation
           attribute="rotation"
           to="90 0 0"
@@ -45,5 +47,14 @@
     <a-entity camera></a-entity>
 
   </a-scene>
+  <input type="range" max="100" min="1" step="5" value="50" id="slider"></input>
+  <script src="./js/main.js"></script>
 </body>
+<style>
+#slider {
+  position: absolute;
+  top: 95%;
+
+}
+</style>
 </html>
