@@ -3,7 +3,7 @@ const sliderElem = document.getElementById("slider")
 
 sliderElem.addEventListener("input", ()=>{
 	   const scaleNum = sliderElem.value;
-    const fixedNum = scaleNum / 5000
+    const fixedNum = scaleNum / 20000
     modelElem.setAttribute("scale", `${fixedNum} ${fixedNum} ${fixedNum}`)
 })
 
