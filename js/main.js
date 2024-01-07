@@ -1,5 +1,7 @@
 const modelElem = document.getElementById("model")
 const sliderElem = document.getElementById("slider")
+const animationElem = document.getElementById("animation")
+const slider2Elem = document.getElementById("slider2")
 
 sliderElem.addEventListener("input", ()=>{
 	   const scaleNum = sliderElem.value;
@@ -7,6 +9,11 @@ sliderElem.addEventListener("input", ()=>{
     modelElem.setAttribute("scale", `${fixedNum} ${fixedNum} ${fixedNum}`)
 })
 
+slider2Elem.addEventListener("input", ()=>{
+	   const scale2Num = slider2Elem.value;
+    const fixed2Num = scale2Num
+    animationElem.setAttribute("to", `${fixed2Num} 0 0`)
+})
 
 window.onload = ()=>{
 
