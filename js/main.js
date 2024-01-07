@@ -10,8 +10,8 @@ sliderElem.addEventListener("input", ()=>{
 })
 
 slider2Elem.addEventListener("input", ()=>{
-	   const scale2Num = slider2Elem.value
-    animationElem.setAttribute("to", `${scale2Num} 0 0`)
+	   const amountOfRotation = slider2Elem.value
+    animationElem.setAttribute("to", `${amountOfRotation} 0 0`)
 })
 
 window.onload = ()=>{
